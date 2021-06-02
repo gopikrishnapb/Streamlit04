@@ -5,6 +5,7 @@ import streamlit as st
 st.title("Students Performance")
 st.header("Education")
 st.text("Dataset")
+st.set_option('deprecation.showPyplotGlobalUse', False)
 data=pd.read_csv('Dataset.csv')
 st.dataframe(data)
 #math score of female students
@@ -17,4 +18,4 @@ st.pyplot()
 st.subheader("Jointplot")
 sns.jointplot(x='reading score',y='writing score',data=data,kind='hex')
 st.pyplot()
-st.baloon()
+st.balloons()
